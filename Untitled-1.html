@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order and Unorder List</title>
+    <style>
+        button {
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order and Unorder List</h1>
+    <button onclick="showOrderedList()">Show Ordered List</button>
+    <button onclick="showUnorderedList()">Show Unordered List</button>
+
+    <div id="listContainer"></div>
+
+    <script>
+        function showOrderedList() {
+            const container = document.getElementById('listContainer');
+            container.innerHTML = `
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            `;
+        }
+
+        function showUnorderedList() {
+            const container = document.getElementById('listContainer');
+            container.innerHTML = `
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                    <li>Item C</li>
+                </ul>
+            `;
+        }
+    </script>
+</body>
+</html>
